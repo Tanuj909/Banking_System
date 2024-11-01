@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debit Amount - Banking Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="debit-page">
+    <header>
+        <div class="logo">
+            <span class="bank-name">Banking Management System</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="new-account.html">New Account</a></li>
+                <li><a href="transfer.html">Transfer</a></li>
+                <li><a href="debit.html">Debit</a></li>
+                <li><a href="credit.html">Credit</a></li>
+                <li><a href="check-balance.html">Check Balance</a></li>
+                <li><a href="transaction-history.html">Transaction History</a></li>
+                <li><a href="change-password.html">Change Password</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Debit Amount</h1>
+        <form action="debit" method="post">
+            <div class="form-group">
+                <label for="account-number">Account Number:</label>
+                <input type="number" id="account-number" name="account-number" placeholder="Enter account number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="pin-number">Pin:</label>
+                <input type="number" id="pin-number" name="pin-number" placeholder="Enter account number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount to Debit:</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount to debit" required>
+            </div>
+
+            <button type="submit">Debit</button>
+        </form>
+    </section>
+</body>
+</html>

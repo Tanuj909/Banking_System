@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Management System - New Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="bank-name">Banking Management System</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="new-account.html">New Account</a></li>
+                <li><a href="#">Transfer</a></li>
+                <li><a href="debit.html">Debit</a></li>
+                <li><a href="credit.html">Credit</a></li>
+                <li><a href="checkbalance.html">Check Balance</a></li>
+                <li><a href="transaction.html">Transaction History</a></li>
+                <li><a href="change.html">Change Password</a></li>
+                <!-- User Profile Dropdown -->
+                <li class="user-profile">
+                    <a href="#" id="profile-icon"><img src="user-icon.png" alt="User Profile" class="profile-icon"></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Logout</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="new-account-form">
+        <h1>Create New Account</h1>
+        <form action="account">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="adhar">Adhar Number:</label>
+            <input type="text" id="adhar" name="adhar" required><br><br>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required><br><br>
+
+            <label for="father">Father's Name:</label>
+            <input type="text" id="father" name="father" required><br><br>
+
+            <label for="account-type">Account Type:</label>
+            <select id="account-type" name="account-type" required>
+                <option value="savings">Savings</option>
+                <option value="current">Current</option>
+            </select><br><br>
+
+            <!-- New Fields: Gender and Balance -->
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label><br><br>
+
+            <label for="balance">Balance:</label>
+            <input type="number" id="balance" name="balance" required><br><br>
+            
+             <label for="pinumber">PIN:</label>
+            <input type="number" id="pinnumber" name="pin" required><br><br>
+            
+            
+
+            <button type="submit">Create Account</button>
+        </form>
+    </section>
+</body>
+</html>

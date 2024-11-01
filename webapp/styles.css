@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.bank-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    padding: 30px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #0077cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles for credit.html */
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+form input[type="number"]::-webkit-outer-spin-button,
+form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Additional Styling for Forms */
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+/* Styles Specific to debit.html */
+.debit-page section {
+    background-color: #e0f7fa; /* Light blue background for debit page */
+}
+
+.debit-page h1 {
+    color: #d32f2f; /* Dark red color for header on debit page */
+}
+
+/* Styles Specific to checkbalance.html */
+.check-balance-page section {
+    background-color: #f0f4c3; /* Light green background for check balance page */
+}
+
+.check-balance-page h1 {
+    color: #388e3c; /* Dark green color for header on check balance page */
+}
+
+/* Adjust the styles for the form elements specifically for this page if needed */
+.check-balance-page form input {
+    border: 1px solid #388e3c; /* Dark green border for input */
+}
+
+.check-balance-page button {
+    background-color: #388e3c; /* Dark green for button */
+}
+
+.check-balance-page button:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    form input, form select {
+        padding: 8px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
